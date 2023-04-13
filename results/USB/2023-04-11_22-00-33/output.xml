@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.8.5 on win32)" generated="20230411 22:00:33.558" rpa="false" schemaversion="3">
+<suite id="s1" name="USB" source="G:\Project\QVerifyFramework\tests\USB">
+<suite id="s1-s1" name="Test1" source="G:\Project\QVerifyFramework\tests\USB\test1.robot">
+<kw name="Call Suite Setup Function" type="SETUP">
+<kw name="Helloworld" library="MyLibrary">
+<msg timestamp="20230411 22:00:33.590" level="INFO">Hello, World!</msg>
+<status status="PASS" starttime="20230411 22:00:33.590" endtime="20230411 22:00:33.590"/>
+</kw>
+<kw name="Reset" library="MyLibrary">
+<msg timestamp="20230411 22:00:33.590" level="FAIL">Keyword 'MyLibrary.Reset' expected 1 argument, got 0.</msg>
+<status status="FAIL" starttime="20230411 22:00:33.590" endtime="20230411 22:00:33.590"/>
+</kw>
+<status status="FAIL" starttime="20230411 22:00:33.589" endtime="20230411 22:00:33.590"/>
+</kw>
+<test id="s1-s1-t1" name="My Test Case1" line="7">
+<status status="FAIL" starttime="20230411 22:00:33.590" endtime="20230411 22:00:33.591">Parent suite setup failed:
+Keyword 'MyLibrary.Reset' expected 1 argument, got 0.</status>
+</test>
+<status status="FAIL" starttime="20230411 22:00:33.579" endtime="20230411 22:00:33.592">Suite setup failed:
+Keyword 'MyLibrary.Reset' expected 1 argument, got 0.</status>
+</suite>
+<suite id="s1-s2" name="Test2" source="G:\Project\QVerifyFramework\tests\USB\test2.robot">
+<kw name="Call Suite Setup Function" type="SETUP">
+<kw name="Helloworld" library="MyLibrary">
+<msg timestamp="20230411 22:00:33.598" level="INFO">Hello, World!</msg>
+<status status="PASS" starttime="20230411 22:00:33.598" endtime="20230411 22:00:33.599"/>
+</kw>
+<status status="PASS" starttime="20230411 22:00:33.598" endtime="20230411 22:00:33.599"/>
+</kw>
+<test id="s1-s2-t1" name="My Test Case2" line="7">
+<kw name="Log" library="BuiltIn">
+<arg>Running Test Case</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20230411 22:00:33.600" level="INFO">Running Test Case</msg>
+<status status="PASS" starttime="20230411 22:00:33.599" endtime="20230411 22:00:33.600"/>
+</kw>
+<status status="PASS" starttime="20230411 22:00:33.599" endtime="20230411 22:00:33.600"/>
+</test>
+<status status="PASS" starttime="20230411 22:00:33.595" endtime="20230411 22:00:33.601"/>
+</suite>
+<suite id="s1-s3" name="Test3" source="G:\Project\QVerifyFramework\tests\USB\test3.robot">
+<kw name="Call Suite Setup Function" type="SETUP">
+<kw name="Helloworld" library="MyLibrary">
+<msg timestamp="20230411 22:00:33.606" level="INFO">Hello, World!</msg>
+<status status="PASS" starttime="20230411 22:00:33.606" endtime="20230411 22:00:33.606"/>
+</kw>
+<status status="PASS" starttime="20230411 22:00:33.606" endtime="20230411 22:00:33.606"/>
+</kw>
+<test id="s1-s3-t1" name="My Test Case3" line="7">
+<kw name="Log" library="BuiltIn">
+<arg>Running Test Case</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20230411 22:00:33.607" level="INFO">Running Test Case</msg>
+<status status="PASS" starttime="20230411 22:00:33.607" endtime="20230411 22:00:33.608"/>
+</kw>
+<status status="PASS" starttime="20230411 22:00:33.607" endtime="20230411 22:00:33.608"/>
+</test>
+<status status="PASS" starttime="20230411 22:00:33.603" endtime="20230411 22:00:33.609"/>
+</suite>
+<status status="FAIL" starttime="20230411 22:00:33.560" endtime="20230411 22:00:33.610"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="2" fail="1" skip="0" id="s1" name="USB">USB</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="Test1">USB.Test1</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s2" name="Test2">USB.Test2</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s3" name="Test3">USB.Test3</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

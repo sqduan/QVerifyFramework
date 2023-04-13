@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.8.5 on win32)" generated="20230411 22:01:00.066" rpa="false" schemaversion="3">
+<suite id="s1" name="USB" source="G:\Project\QVerifyFramework\tests\USB">
+<suite id="s1-s1" name="Test1" source="G:\Project\QVerifyFramework\tests\USB\test1.robot">
+<kw name="Call Suite Setup Function" type="SETUP">
+<kw name="Helloworld" library="MyLibrary">
+<msg timestamp="20230411 22:01:00.094" level="INFO">Hello, World!</msg>
+<status status="PASS" starttime="20230411 22:01:00.094" endtime="20230411 22:01:00.094"/>
+</kw>
+<kw name="Reset" library="MyLibrary">
+<arg>${123}</arg>
+<status status="PASS" starttime="20230411 22:01:00.094" endtime="20230411 22:01:00.094"/>
+</kw>
+<status status="PASS" starttime="20230411 22:01:00.093" endtime="20230411 22:01:00.094"/>
+</kw>
+<test id="s1-s1-t1" name="My Test Case1" line="7">
+<kw name="Log" library="BuiltIn">
+<arg>Running Test Case</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20230411 22:01:00.095" level="INFO">Running Test Case</msg>
+<status status="PASS" starttime="20230411 22:01:00.095" endtime="20230411 22:01:00.095"/>
+</kw>
+<status status="PASS" starttime="20230411 22:01:00.095" endtime="20230411 22:01:00.095"/>
+</test>
+<status status="PASS" starttime="20230411 22:01:00.088" endtime="20230411 22:01:00.097"/>
+</suite>
+<suite id="s1-s2" name="Test2" source="G:\Project\QVerifyFramework\tests\USB\test2.robot">
+<kw name="Call Suite Setup Function" type="SETUP">
+<kw name="Helloworld" library="MyLibrary">
+<msg timestamp="20230411 22:01:00.102" level="INFO">Hello, World!</msg>
+<status status="PASS" starttime="20230411 22:01:00.102" endtime="20230411 22:01:00.102"/>
+</kw>
+<status status="PASS" starttime="20230411 22:01:00.102" endtime="20230411 22:01:00.102"/>
+</kw>
+<test id="s1-s2-t1" name="My Test Case2" line="7">
+<kw name="Log" library="BuiltIn">
+<arg>Running Test Case</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20230411 22:01:00.103" level="INFO">Running Test Case</msg>
+<status status="PASS" starttime="20230411 22:01:00.103" endtime="20230411 22:01:00.103"/>
+</kw>
+<status status="PASS" starttime="20230411 22:01:00.102" endtime="20230411 22:01:00.103"/>
+</test>
+<status status="PASS" starttime="20230411 22:01:00.098" endtime="20230411 22:01:00.104"/>
+</suite>
+<suite id="s1-s3" name="Test3" source="G:\Project\QVerifyFramework\tests\USB\test3.robot">
+<kw name="Call Suite Setup Function" type="SETUP">
+<kw name="Helloworld" library="MyLibrary">
+<msg timestamp="20230411 22:01:00.109" level="INFO">Hello, World!</msg>
+<status status="PASS" starttime="20230411 22:01:00.109" endtime="20230411 22:01:00.109"/>
+</kw>
+<status status="PASS" starttime="20230411 22:01:00.109" endtime="20230411 22:01:00.109"/>
+</kw>
+<test id="s1-s3-t1" name="My Test Case3" line="7">
+<kw name="Log" library="BuiltIn">
+<arg>Running Test Case</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20230411 22:01:00.110" level="INFO">Running Test Case</msg>
+<status status="PASS" starttime="20230411 22:01:00.110" endtime="20230411 22:01:00.110"/>
+</kw>
+<status status="PASS" starttime="20230411 22:01:00.109" endtime="20230411 22:01:00.110"/>
+</test>
+<status status="PASS" starttime="20230411 22:01:00.106" endtime="20230411 22:01:00.111"/>
+</suite>
+<status status="PASS" starttime="20230411 22:01:00.068" endtime="20230411 22:01:00.113"/>
+</suite>
+<statistics>
+<total>
+<stat pass="3" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="3" fail="0" skip="0" id="s1" name="USB">USB</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Test1">USB.Test1</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s2" name="Test2">USB.Test2</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s3" name="Test3">USB.Test3</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

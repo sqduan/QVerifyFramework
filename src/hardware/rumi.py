@@ -17,6 +17,13 @@ from robot.api import logger
 
 dataLength = 1024
 
+RUMICommand = {
+    "FLUSH_IMAGE": "flush",
+    "RESET_RUMI":  "reset_rumi",
+    "RESET_JTAG":  "reset_jtag",
+    "QUIT_RUMI":   "quit"
+}
+
 def create_rumi_list_json_file(jsonFile):
     """ Create a list which contains RUMI info from the json file
 
@@ -67,8 +74,9 @@ class RUMI:
     def send_command(self, command, param = None):
         if not self.thread_running:
             self.thread_running = True
+            actualCommand = RUMICommand[command]
             threading.Thread(target = self._send_command_thread,
-                             args = (command, param)).start()
+                             args = (actualCommand, param)).start()
         else:
             logger.warn(f"A client thread is already running!", html = False)
 

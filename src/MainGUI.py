@@ -151,6 +151,10 @@ flush_image_button = tk.Button(root, text="Flush RUMI Image",
     command = partial(SendRUMICommand, currentRumi, "FLUSH_IMAGE"))
 rumi_reset_button = tk.Button(root, text="Reset RUMI",
     command = partial(SendRUMICommand, currentRumi, "RESET_RUMI"))
+jtag_reset_button = tk.Button(root, text="Reset JTAG",
+    command = partial(SendRUMICommand, currentRumi, "RESET_JTAG"))
+rumi_quit_button = tk.Button(root, text="Quit RUMI",
+    command = partial(SendRUMICommand, currentRumi, "RUMI_QUIT"))
 
 ################################################################
 # APP GUI construction, weiget placement
@@ -173,6 +177,8 @@ start_q6_button.grid(row = 6, column = 2, pady = 10)
 
 flush_image_button.grid(row = 7, column = 1, pady = 10)
 rumi_reset_button.grid(row = 7, column = 2, pady = 10)
+jtag_reset_button.grid(row = 8, column = 1, pady = 10)
+rumi_quit_button.grid(row = 8, column = 2, pady = 10)
 
 # Run the Tkinter event loop
 root.mainloop()

@@ -17,22 +17,7 @@ PBI=
 NET
 ;07558	
 NODE=blr-s4b-q07558
-;480 qiman
-;NODE=10.21.8.75
-;490 xulong
-;NODE=10.21.8.123
-;490 weiwei
-;NODE=10.21.8.98
-;7528
-;NODE=10.21.8.106
-;7533
-;NODE=10.21.8.139
-;7533 cypress
-;NODE=10.21.8.103
-;zhijie
-;NODE=10.21.8.72
-;mult master
-;NODE=10.21.8.136
+
 PACKLEN=1024
 CORE=2
 

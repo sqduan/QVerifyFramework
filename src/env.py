@@ -15,8 +15,8 @@ rumiListFile = "rumi.json"
 rumiListFile = os.path.join(rumiConfigPath, rumiListFile)
 
 # Framework configure file
-frameworkConfigFile = "framework_config.json"
-frameworkConfigFile = os.path.join(configPath, frameworkConfigFile)
+settingsFile = "settings.json"
+settingsFile = os.path.join(configPath, settingsFile)
 
 # Constants and enum variables
 CORE = Enum('CORE', ('APSS', 'RISCV', 'Q6'))

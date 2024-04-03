@@ -1,0 +1,20 @@
+{
+    "compile": "False",
+    "module": "USB",
+
+    "test_platform_config": "test_platforms.json",
+    "suite": "Test reload.robot",
+    "logdir": "results",
+
+    "t32dir": "C:\\T32\\TRACE32_N_2022_01_000143542\\bin\\windows64\\",
+    "riscv_app": "t32mriscv.exe",
+
+    "apss_app": "t32marm.exe",
+    "q6_app": "t32mqdsp6.exe",
+
+    "default_2node_rumi": "7558",
+    "default_3node_rumi": "199981",
+
+    "t32_timeout": 300,
+    "case_timeout": 1200
+  }

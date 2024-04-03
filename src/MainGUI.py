@@ -23,7 +23,7 @@ rumis = rumi.create_rumi_list_json_file(env.rumiListFile)
 
 # Read configuration from framework_config.json
 try:
-    with open(env.frameworkConfigFile, 'r') as config_file:
+    with open(env.settingsFile, 'r') as config_file:
         config_data = json.load(config_file)
 except FileNotFoundError:
     print("FileNotFound! No default config json file")
@@ -88,15 +88,6 @@ def StartupT32(coreType = env.CORE.APSS):
     elif coreType == env.CORE.Q6:
         print("Hello: Q6")
 
-def SendRUMICommand(rumi, command, param = None):
-    if not rumis:
-        logger.error(f"RUMI list is empty!", html = False)
-        return -1
-
-    rumis[rumi].send_command(command, param)
-    
-    return 0
-
 ################################################################
 # APP GUI construction, weiget create
 ################################################################
@@ -147,14 +138,14 @@ start_riscv_button = tk.Button(root, text="TMEL T32 Start",
 start_q6_button = tk.Button(root, text="Q6 T32 Start",
     command = partial(StartupT32, env.CORE.Q6))
 
-flush_image_button = tk.Button(root, text="Flush RUMI Image",
-    command = partial(SendRUMICommand, currentRumi, "FLUSH_IMAGE"))
+reload_image_button = tk.Button(root, text="Reload RUMI Image",
+    command = partial(SendRUMICommand, currentRumi, "RELOAD_IMAGE"))
 rumi_reset_button = tk.Button(root, text="Reset RUMI",
     command = partial(SendRUMICommand, currentRumi, "RESET_RUMI"))
 jtag_reset_button = tk.Button(root, text="Reset JTAG",
     command = partial(SendRUMICommand, currentRumi, "RESET_JTAG"))
 rumi_quit_button = tk.Button(root, text="Quit RUMI",
-    command = partial(SendRUMICommand, currentRumi, "RUMI_QUIT"))
+    command = partial(SendRUMICommand, currentRumi, "QUIT_RUMI"))
 
 ################################################################
 # APP GUI construction, weiget placement
@@ -175,7 +166,7 @@ start_apss_button.grid(row = 6, column = 0, pady = 10)
 start_riscv_button.grid(row = 6, column = 1, pady = 10)
 start_q6_button.grid(row = 6, column = 2, pady = 10)
 
-flush_image_button.grid(row = 7, column = 1, pady = 10)
+reload_image_button.grid(row = 7, column = 1, pady = 10)
 rumi_reset_button.grid(row = 7, column = 2, pady = 10)
 jtag_reset_button.grid(row = 8, column = 1, pady = 10)
 rumi_quit_button.grid(row = 8, column = 2, pady = 10)

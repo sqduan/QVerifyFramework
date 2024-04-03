@@ -18,10 +18,10 @@ from robot.api import logger
 dataLength = 1024
 
 RUMICommand = {
-    "FLUSH_IMAGE": "flush",
-    "RESET_RUMI":  "reset_rumi",
-    "RESET_JTAG":  "reset_jtag",
-    "QUIT_RUMI":   "quit"
+    "RELOAD_IMAGE": "reload\n",
+    "RESET_RUMI":  "reset_rumi\n",
+    "RESET_JTAG":  "reset_jtag\n",
+    "QUIT_RUMI":   "quit\n"
 }
 
 def create_rumi_list_json_file(jsonFile):
